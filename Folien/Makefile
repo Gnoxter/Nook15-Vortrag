@@ -20,5 +20,4 @@ protokoll.pdf: protokoll.svg
 
 folien.pdf: folien.tex protokoll.pdf
 	pdflatex folien.tex
-	pdflatex folien.tex
 
