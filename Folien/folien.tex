@@ -18,7 +18,10 @@
 \setbeamercolor{footlinecolor}{fg=white,bg=black}
 \setbeamertemplate{footline}{}
 
+\setbeamertemplate{itemize item}{\color{black}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{black}$\blacktriangleright$}
 
+\newcommand{\myitem}[2]{\item[\textcolor{gray}{#1}] \textcolor{black}{\emph{#2}}}
 
 {
 \setbeamercolor{background canvas}{bg=black, fg=white}
@@ -55,9 +58,9 @@
 \end{figure}
 
 \begin{description}
-\item[Versorgung] 5V
-\item[Max. Strom]
-\item[Logic Level] Low  $<$ 0.3$\cdot$VDD, 0.7$\cdot$VDD $<$ High
+\myitem{Versorgung}{5V}
+\myitem{Strom}{20mA}
+\myitem{Logic Level}{Low  $<$ 0.3$\cdot$VDD, 0.7$\cdot$VDD $<$ High}
 \end{description}
 
 \end{frame}
