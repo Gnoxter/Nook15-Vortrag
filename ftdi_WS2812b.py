@@ -209,8 +209,8 @@ if __name__ == "__main__":
         disp = SerialDisplay(16, 14)
 
     next_time = time.time()
-    effect = rotor()
-    #effect = simple()
+    #effect = rotor()
+    effect = simple()
 
     for image, time_delta in effect:
         disp.display(image  ** gamma)
