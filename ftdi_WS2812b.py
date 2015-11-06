@@ -192,11 +192,11 @@ def simple():
 
     hue = 0
     while True:
-        hue = (hue + 2) % 360
+        hue = (hue + 1) % 360
         r[:], g[:] , b[:]  = hsv_to_rgb(hue, 1,1)
 
         img = np.transpose([r, g, b], [1, 2, 0])
-        yield img, 0.05
+        yield img, 0.01
 
 
 
@@ -205,7 +205,7 @@ if __name__ == "__main__":
         gamma = 1.0
         disp = MPVDisplay(16, 14)
     else:
-        gamma = 2.5
+        gamma = 1.0
         disp = SerialDisplay(16, 14)
 
     next_time = time.time()
